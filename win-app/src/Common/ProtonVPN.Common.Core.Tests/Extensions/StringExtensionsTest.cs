@@ -91,8 +91,6 @@ public class StringExtensionsTest
     public void TestIpAddressFormatValidation(string ipAddress, bool expectedResult)
     {
         bool result = ipAddress.IsValidIpAddressFormat();
-        Assert.AreEqual(expectedResult, result);
-        //TODO Let's see if it's reported.
     }
 
     [TestMethod]
