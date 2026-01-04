@@ -1,0 +1,15 @@
+stryker-config:
+  solution: './ProtonVpn.sln'
+  test-projects:
+    - 'ProtonVPN.Common.Core.Tests.csproj'
+
+  reporters:
+    - progress
+    - html
+
+  log-level: info
+
+  # Filter to isolate only the TestUrlValidation class
+  test-case-filter: 'FullyQualifiedName~TestUrlValidation'
+
+  timeout-ms: 60000
